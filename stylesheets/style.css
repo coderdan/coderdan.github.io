@@ -1,0 +1,660 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Function Pro';
+  src: url('../fonts/FunctionPro-Light-webfont.eot');
+  src: url('../fonts/FunctionPro-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FunctionPro-Light-webfont.woff') format('woff'),
+       url('../fonts/FunctionPro-Light-webfont.ttf') format('truetype'),
+       url('../fonts/FunctionPro-Light-webfont.svg#FunctionProLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Function Pro';
+  src: url('../fonts/FunctionPro-Book-webfont.eot');
+  src: url('../fonts/FunctionPro-Book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FunctionPro-Book-webfont.woff') format('woff'),
+       url('../fonts/FunctionPro-Book-webfont.ttf') format('truetype'),
+       url('../fonts/FunctionPro-Book-webfont.svg#FunctionProBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Function Pro';
+  src: url('../fonts/FunctionPro-BookOblique-webfont.eot');
+  src: url('../fonts/FunctionPro-BookOblique-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FunctionPro-BookOblique-webfont.woff') format('woff'),
+       url('../fonts/FunctionPro-BookOblique-webfont.ttf') format('truetype'),
+       url('../fonts/FunctionPro-BookOblique-webfont.svg#FunctionProBookOblique') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Function Pro';
+  src: url('../fonts/FunctionPro-Medium-webfont.eot');
+  src: url('../fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FunctionPro-Medium-webfont.woff') format('woff'),
+       url('../fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
+       url('../fonts/FunctionPro-Medium-webfont.svg#FunctionProMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Function Pro';
+  src: url('../fonts/FunctionPro-Bold-webfont.eot');
+  src: url('../fonts/FunctionPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FunctionPro-Bold-webfont.woff') format('woff'),
+       url('../fonts/FunctionPro-Bold-webfont.ttf') format('truetype'),
+       url('../fonts/FunctionPro-Bold-webfont.svg#FunctionProBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Base */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: hsl(210, 15%, 25%);
+  color: white;
+}
+
+::-webkit-selection {
+  background-color: hsl(210, 15%, 25%);
+  color: white;
+}
+
+::selection {
+  background-color: hsl(210, 15%, 25%);
+  color: white;
+}
+
+body {
+  background: white;
+  color: hsl(210, 3%, 25%);
+  font-family: "Function Pro", Futura, "Segoe UI", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 100%;
+}
+
+h1 + p,
+h2 + p { margin: 0; }
+
+p:last-of-type { margin-bottom: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-width {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.site-width:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Header */
+
+.header--main {
+  background: url("../images/bg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  color: hsl(200, 1%, 24%);
+  min-height: 485px;
+  padding: 25px 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.header--main h1 {
+  color: hsl(350, 69%, 52%);
+  font-size: 470%;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 0.25em 0 0;
+  text-shadow: 0 3px 0 hsl(350, 75%, 34%), 0 6px 0 hsl(350, 75%, 34%);
+}
+
+.header--main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list--skill {
+  font-size: 135%;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.list--contact-header-item {
+  display: inline-block;
+  margin: 0 0.35em;
+}
+
+.list--contact-header-item a {
+  transition: top 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  position: relative;
+  top: 0;
+}
+
+.list--contact-header-item a:hover,
+.list--contact-header-item a:active {
+  opacity: .9;
+  top: -8px;
+}
+
+/* Video */
+
+.video--wrapper {
+  background: hsl(210, 5%, 13%);
+  border-top: 5px solid hsl(210, 5%, 27%);
+}
+
+.video--container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.video--clip {
+  box-shadow: 0 1px 3px 2px hsl(210, 5%, 10%);
+  border: 1px solid hsl(210, 5%, 9%);
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video--clip iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Bio */
+
+.bio--wrapper {
+  background: hsl(10, 55%, 50%);
+  border-top: 5px solid hsl(10, 55%, 60%);
+  padding: 2em 0;
+  color: hsl(10, 50%, 95%);
+}
+
+.bio--wrapper h1 { color: white; }
+
+.bio--wrapper a:link,
+.bio--wrapper a:visited {
+  border-bottom: 1px dotted hsl(11, 50%, 75%);
+  color: hsl(64, 80%, 56%);
+  font-weight: normal;
+  text-decoration: none;
+  transition: border 0.15s ease-out;
+}
+
+.bio--wrapper a:hover,
+.bio--wrapper a:active {
+  color: hsl(64, 90%, 75%);
+  border-bottom: 1px solid hsl(64, 90%, 75%);
+}
+
+.bio--image {
+  border: 5px solid hsl(10, 55%, 60%);
+  border-radius: 3px;
+  float: left;
+  margin-right: 2em;
+}
+
+.bio--text {
+}
+
+/* Services */
+
+.service--wrapper {
+  border-top: 5px solid hsl(10, 55%, 60%);
+  padding: 2em 0;
+}
+
+.list--services {
+  padding: 0;
+  margin-top: 1em;
+}
+
+.list--services-item {
+  display: block;
+  float: left;
+  margin-bottom: 1.5em;
+  padding-right: 1.5em;
+  width: 33.33%;
+}
+
+.list--services-item p {
+  color: hsl(210, 3%, 50%);
+  margin-top: 0.25em;
+  font-size: 90%;
+}
+
+/* Testimonials */
+
+.testimonial--wrapper {
+  background: hsl(215, 54%, 39%);
+  border-top: 5px solid hsl(215, 40%, 55%);
+  color: white;
+  padding: 2em 0 1em;
+}
+
+.testimonial--list {
+  color: hsl(215, 70%, 85%);
+  display: block;
+  min-height: 250px;
+  width: 100%;
+}
+
+.testimonial--item {
+  font-size: 90%;
+  display: table;
+  min-height: 170px;
+  position: relative;
+  padding-left: 200px;
+}
+
+.testimonial--position {
+  text-align: center;
+}
+
+.testimonial--text:before,
+.testimonial--text:after {
+  color: hsl(215, 50%, 70%);
+  font-weight: normal;
+}
+
+.testimonial--text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.testimonial--text p {
+  display: inline;
+  font-style: italic;
+}
+
+.testimonial--item a { transition: all 0.1s ease-in-out; }
+
+.testimonial--item a:link,
+.testimonial--item a:visited {
+  border-bottom: 1px dotted hsl(215, 60%, 60%);
+  text-decoration: none;
+  color: inherit;
+}
+
+.testimonial--item a:hover,
+.testimonial--item a:active {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.testimonial--item cite {
+  display: block;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0.5em
+}
+
+.testimonial--item footer {
+  text-align: center;
+  max-width: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.testimonial--item footer img {
+  border: 4px solid hsl(215, 50%, 35%);
+  display: block;
+}
+
+.testimonial--author-info {
+  color: hsl(215, 50%, 70%);
+  font-size: 85%;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/* CTA */
+
+.cta--wrapper {
+  border-top: 5px solid hsl(215, 40%, 55%);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.cta--wrapper h1 { line-height: 1; }
+
+.cta--wrapper small {
+  color: hsl(210, 3%, 60%);
+  display: block;
+  font-style: italic;
+  font-size: 125%;
+  margin: 0.75em 0 1em;
+}
+
+.cta--button {
+  background: hsl(155, 99%, 35%);
+  border-bottom: 5px solid hsl(150, 82%, 34%);
+  border-radius: 3px;
+  color: hsl(127, 100%, 95%);
+  display: block;
+  font-size: 125%;
+  margin: 0 auto;
+  padding: 1em 0;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 2px hsl(155, 99%, 25%);
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.275s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  width: 60%;
+}
+
+.cta--button:hover,
+.cta--button:active {
+  background: hsl(155, 100%, 29%);
+  border-bottom-color: hsl(150, 82%, 28%);
+  color: white;
+  text-shadow: 0 1px 2px hsl(155, 99%, 22%);
+  top: -5px;
+}
+
+/* Footer */
+
+.footer--wrapper {
+  background: hsl(210, 5%, 13%);
+  border-top: 5px solid hsl(210, 5%, 35%);
+  color: hsl(210, 3%, 60%);
+  font-size: 90%;
+  padding: 2em 0;
+}
+
+.footer--wrapper h1 { color: hsl(0, 0%, 85%); }
+
+.footer--item-wrapper {
+  display: block;
+  float: left;
+  letter-spacing: 1px;
+  margin: 0.5em 6em 0 -0.9em;
+}
+
+.footer--item-wrapper:last-of-type { margin-right: 0; }
+
+.footer--item-wrapper li { margin: 0.25em 0; }
+
+.footer--item-wrapper i {
+  color: hsl(210, 5%, 35%);
+  margin-right: 1px;
+}
+
+.has-icons li:before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  left: -6px;
+  opacity: .5;
+  position: relative;
+  top: 3px;
+  width: 18px;
+}
+
+.has-icons .icon-address:before {
+  background-image: url("../images/i-address-small.png");
+}
+
+.has-icons .icon-github:before {
+  background-image: url("../images/i-github-small.png");
+}
+
+.has-icons .icon-mail:before {
+  background-image: url("../images/i-mail-small.png");
+}
+
+.has-icons .icon-twitter:before {
+  background-image: url("../images/i-twitter-small.png");
+}
+
+.footer--wrapper a {
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer--wrapper a:link,
+.footer--wrapper a:visited {
+  border-bottom: 1px dotted hsl(210, 3%, 30%);
+  color: hsl(210, 5%, 60%);
+}
+
+.footer--wrapper a:hover,
+.footer--wrapper a:active {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.footer--wrapper li:hover:before,
+.footer--wrapper li:hover:before { opacity: 1; }
+
+/* Plugins */
+
+/* TipTip CSS - Version 1.2 */
+
+#tiptip_holder {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+#tiptip_holder.tip_top {
+  padding-bottom: 5px;
+}
+
+#tiptip_holder.tip_bottom {
+  padding-top: 5px;
+}
+
+#tiptip_holder.tip_right {
+  padding-left: 5px;
+}
+
+#tiptip_holder.tip_left {
+  padding-right: 5px;
+}
+
+#tiptip_content {
+  background: hsla(210, 5%, 15%, .92);
+  border-top: 3px solid black;
+  color: hsl(210, 5%, 90%);
+  font-size: 16px;
+  padding: 4px 15px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+#tiptip_arrow, #tiptip_arrow_inner {
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  height: 0;
+  width: 0;
+}
+
+#tiptip_holder.tip_top #tiptip_arrow {
+  border-top-color: hsl(0, 0%, 100%);
+  border-top-color: hsla(0, 0%, 100%, 0.35);
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow {
+  border-bottom-color: hsl(0, 0%, 100%);
+  border-bottom-color: hsla(0, 0%, 100%, 0.35);
+}
+
+#tiptip_holder.tip_right #tiptip_arrow {
+  border-right-color: hsl(0, 0%, 100%);
+  border-right-color: hsla(0, 0%, 100%, 0.35);
+}
+
+#tiptip_holder.tip_left #tiptip_arrow {
+  border-left-color: hsl(0, 0%, 100%);
+  border-left-color: hsla(0, 0%, 100%, 0.35);
+}
+
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+  margin-top: -7px;
+  margin-left: -6px;
+  border-top-color: black;
+  border-top-color: black;
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+  margin-top: -5px;
+  margin-left: -6px;
+  border-bottom-color: black;
+  border-bottom-color: black;
+}
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+  margin-top: -6px;
+  margin-left: -5px;
+  border-right-color: black;
+  border-right-color: black;
+}
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+  margin-top: -6px;
+  margin-left: -7px;
+  border-left-color: black;
+  border-left-color: black;
+}
+
+/*
+ | ------------------------------------------
+ | Glide styles
+ | ------------------------------------------
+ | Here are slider styles
+ |
+*/
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+  .slides {
+    height: 100%;
+
+    /* Simple clear fix */
+    overflow: hidden;
+
+    /**
+     * Prevent blinking issue
+     * Not tested. Experimental.
+     */
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+
+    /**
+     * Here is CSS transitions
+     * responsible for slider animation in modern broswers
+     */
+    -webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+       -moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        -ms-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         -o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+            transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  }
+
+    .slide {
+      height: 100%;
+      float: left;
+      clear: none;
+    }
+
+
+  .slider-arrows {}
+
+    .slider-arrow {
+      position: absolute;
+      display: block;
+      margin-bottom: -20px;
+      padding: 20px;
+    }
+
+      .slider-arrow--right { bottom: 50%; right: 30px; }
+      .slider-arrow--left { bottom: 50%; left: 30px; }
+
+
+  .slider-nav {
+    position: absolute;
+    bottom: 15px;
+  }
+
+    .slider-nav__item {
+      width: 10px;
+      border-radius: 10px;
+      height: 10px;
+      float: left;
+      clear: none;
+      display: block;
+      margin: 0 7px;
+      background: hsl(215, 35%, 50%);
+      transition: transform 0.1s ease-in-out;
+    }
+
+        .slider-nav__item:not(.slider-nav__item--current):hover {
+          background: white;
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+
+        .slider-nav__item--current {
+          background: white;
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          transform: scale(1.5);
+        }
