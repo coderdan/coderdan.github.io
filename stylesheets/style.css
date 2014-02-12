@@ -283,11 +283,11 @@ ul {
 }
 
 .testimonial--item {
-  font-size: 90%;
   display: table;
-  min-height: 170px;
-  position: relative;
+  font-size: 90%;
+  height: 50%;
   padding-left: 200px;
+  position: relative;
 }
 
 .testimonial--position {
