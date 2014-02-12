@@ -437,21 +437,15 @@ ul {
   width: 18px;
 }
 
-.has-icons .icon-address:before {
-  background-image: url("../images/i-address-small.png");
-}
+.has-icons .icon-address:before { background-image: url("../images/i-address-small.png"); }
 
-.has-icons .icon-github:before {
-  background-image: url("../images/i-github-small.png");
-}
+.has-icons .icon-github:before { background-image: url("../images/i-github-small.png"); }
 
-.has-icons .icon-mail:before {
-  background-image: url("../images/i-mail-small.png");
-}
+.has-icons .icon-linkedin:before { background-image: url("../images/i-linkedin-small.png"); }
 
-.has-icons .icon-twitter:before {
-  background-image: url("../images/i-twitter-small.png");
-}
+.has-icons .icon-mail:before { background-image: url("../images/i-mail-small.png"); }
+
+.has-icons .icon-twitter:before { background-image: url("../images/i-twitter-small.png"); }
 
 .footer--wrapper a {
   text-decoration: none;
