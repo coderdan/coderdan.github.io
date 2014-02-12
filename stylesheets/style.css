@@ -405,7 +405,7 @@ ul {
   border-top: 5px solid hsl(210, 5%, 35%);
   color: hsl(210, 3%, 60%);
   font-size: 90%;
-  padding: 2em 0;
+  padding: 2em 0 4em;
 }
 
 .footer--wrapper h1 { color: hsl(0, 0%, 85%); }
@@ -464,8 +464,7 @@ ul {
   color: white;
 }
 
-.footer--wrapper li:hover:before,
-.footer--wrapper li:hover:before { opacity: 1; }
+.footer--wrapper li:not(.icon-address):hover:before { opacity: 1; }
 
 /* Plugins */
 
