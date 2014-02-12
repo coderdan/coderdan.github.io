@@ -283,11 +283,11 @@ ul {
 }
 
 .testimonial--item {
-  font-size: 90%;
   display: table;
-  min-height: 170px;
-  position: relative;
+  font-size: 90%;
+  height: 50%;
   padding-left: 200px;
+  position: relative;
 }
 
 .testimonial--position {
@@ -405,7 +405,7 @@ ul {
   border-top: 5px solid hsl(210, 5%, 35%);
   color: hsl(210, 3%, 60%);
   font-size: 90%;
-  padding: 2em 0;
+  padding: 2em 0 4em;
 }
 
 .footer--wrapper h1 { color: hsl(0, 0%, 85%); }
@@ -437,21 +437,15 @@ ul {
   width: 18px;
 }
 
-.has-icons .icon-address:before {
-  background-image: url("../images/i-address-small.png");
-}
+.has-icons .icon-address:before { background-image: url("../images/i-address-small.png"); }
 
-.has-icons .icon-github:before {
-  background-image: url("../images/i-github-small.png");
-}
+.has-icons .icon-github:before { background-image: url("../images/i-github-small.png"); }
 
-.has-icons .icon-mail:before {
-  background-image: url("../images/i-mail-small.png");
-}
+.has-icons .icon-linkedin:before { background-image: url("../images/i-linkedin-small.png"); }
 
-.has-icons .icon-twitter:before {
-  background-image: url("../images/i-twitter-small.png");
-}
+.has-icons .icon-mail:before { background-image: url("../images/i-mail-small.png"); }
+
+.has-icons .icon-twitter:before { background-image: url("../images/i-twitter-small.png"); }
 
 .footer--wrapper a {
   text-decoration: none;
@@ -470,8 +464,7 @@ ul {
   color: white;
 }
 
-.footer--wrapper li:hover:before,
-.footer--wrapper li:hover:before { opacity: 1; }
+.footer--wrapper li:not(.icon-address):hover:before { opacity: 1; }
 
 /* Plugins */
 
