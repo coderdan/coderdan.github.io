@@ -1,0 +1,1202 @@
+<html lang="en-au">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>István Huszár: Front-end Developer &amp; Web Designer</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+  <style>
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    ::-moz-selection {
+      background: black;
+      color: white;
+    }
+
+    ::selection {
+      background: black;
+      color: white;
+    }
+
+    html,
+    body {
+      background: hsl(9, 55%, 49%);
+      color: #ccc;
+      font: 300 18px/1.875 "Lato", "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+
+    .site-width {
+      max-width: 740px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .wrapper { padding: 3em 0; }
+
+    .has-shadow { text-shadow: 0 1px 1px hsl(10, 50%, 45%); }
+
+    h1 {
+      color: white;
+      font-size: 250%;
+      font-weight: 300;
+      line-height: 1;
+      margin: 0 0 1em;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0 0 0.5em;
+      padding: 0;
+    }
+
+    p { margin: 1.5em 0; }
+    p:last-of-type { margin-bottom: 0; }
+
+    strong abbr {
+      cursor: help;
+      border-bottom: 1px dotted white;
+    }
+
+    strong {
+      background: hsl(9, 60%, 55%);
+      border-radius: 2px;
+      display: inline-block;
+      padding: 0 0.25em;
+      font-weight: 700;
+    }
+
+    .section--intro {
+      color: white;
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .section--intro h1 {
+      display: block;
+      font-size: 400%;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0 0 0.5em;
+      text-shadow: 0 2px 2px hsl(10, 60%, 44%);
+    }
+
+    .section--cv {
+      color: #ccc;
+      margin-top: 21em;
+      text-align: center;
+      position: relative;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .section--cv .wrapper {
+      background: #202020;
+      padding: 3em 0 0;
+      width: 100%;
+    }
+
+    .section--cv strong {
+      background: transparent;
+      display: inline;
+      padding: 0;
+    }
+
+    .section--portfolio {
+      margin-bottom: 10em;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .section--portfolio h1 {
+      margin-top: 1em;
+    }
+
+    .section--portfolio .wrapper {
+      background: #202020;
+      padding-top: 0;
+      width: 100%;
+    }
+
+    .section--portfolio strong {
+      background: none;
+      display: inline;
+      padding: 0;
+    }
+
+    hr {
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(252,252,252,0) 10%, rgba(242,242,242,0.68) 50%, rgba(232,232,232,0) 90%, rgba(229,229,229,0) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(10%,rgba(252,252,252,0)), color-stop(50%,rgba(242,242,242,0.68)), color-stop(90%,rgba(232,232,232,0)), color-stop(100%,rgba(229,229,229,0)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(252,252,252,0) 10%,rgba(242,242,242,0.68) 50%,rgba(232,232,232,0) 90%,rgba(229,229,229,0) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(252,252,252,0) 10%,rgba(242,242,242,0.68) 50%,rgba(232,232,232,0) 90%,rgba(229,229,229,0) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(252,252,252,0) 10%,rgba(242,242,242,0.68) 50%,rgba(232,232,232,0) 90%,rgba(229,229,229,0) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(252,252,252,0) 10%,rgba(242,242,242,0.68) 50%,rgba(232,232,232,0) 90%,rgba(229,229,229,0) 100%);
+      border: 0;
+      color: transparent;
+      height: 1px;
+      margin: 3.75em 0 3em;
+    }
+
+    .btn {
+      border: 0;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 300;
+      height: 120px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-top: 0.75em;
+      padding: 18px 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: all 0.2s 0.22s;
+      -moz-transition: all 0.2s 0.22s;
+      transition: all 0.2s 0.22s;
+      width: 350px;
+    }
+
+    .btn:hover {
+      background-color: hsl(160, 70%, 40%);
+      border: 0;
+      border-radius: 3px;
+      text-shadow: 0 1px 1px hsl(160, 60%, 30%);
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      transition-delay: 0s;
+      background-position: 250px;
+    }
+
+    .btn span {
+      font-size: 175%;
+      display: inline-block;
+    }
+
+    .btn small {
+      display: block;
+      font-size: 16px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .btn span,
+    .btn small {
+      color: hsl(210, 5%, 80%);
+      position: relative;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      transform: scale(0.8);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      -moz-transition: -moz-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      -webkit-transition-property: color, -webkit-transform, top;
+      -moz-transition-property: color, -moz-transform, top;
+      transition-property: color, transform, top;
+    }
+
+    .btn:hover span,
+    .btn:hover small {
+      color: white;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .btn:active {
+      top: 3px;
+    }
+
+    svg {
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    svg line {
+      fill: none;
+      stroke-width: 6;
+      stroke-linejoin: round;
+      stroke: #eee;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .btn:hover svg line {
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      transition-delay: 0s;
+      stroke-width: 0;
+    }
+
+    .btn svg line.top,
+    .btn svg line.bottom {
+      stroke-dasharray: 350;
+    }
+
+    .btn svg line.left,
+    .btn svg line.right {
+      stroke-dasharray: 120;
+    }
+
+    .btn:hover svg line.top {
+      -webkit-transform: translateX(-350px);
+      transform: translateX(-350px);
+    }
+
+    .btn:hover svg line.bottom {
+      -webkit-transform: translateX(350px);
+      transform: translateX(350px);
+    }
+
+    .btn:hover svg line.left {
+      -webkit-transform: translateY(120px);
+      transform: translateY(120px);
+    }
+
+    .btn:hover svg line.right {
+      -webkit-transform: translateY(-120px);
+      transform: translateY(-120px);
+    }
+
+    p > a {
+      -moz-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    p > a:link,
+    p > a:visited {
+      border-bottom: 1px solid hsl(7, 70%, 75%);
+      border-radius: 2px;
+      color: hsl(55, 100%, 85%);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.1em 0;
+    }
+
+    .section--portfolio a:link,
+    .section--portfolio a:visited { border-bottom-color: #ddd; }
+
+    p > a:hover,
+    p > a:active {
+      box-shadow: 0 -1.6em 0 hsla(0, 0%, 100%, 0.12) inset;
+      border-bottom: 2px solid white;
+      color: #eee;
+      text-decoration: none;
+    }
+
+    figure {
+      display: block;
+      margin: 3em 0 0;
+    }
+
+    figure:last-of-type {
+      margin-bottom: 0;
+    }
+
+    figure ~ hr { margin: 4em 0; }
+
+    figure ul {
+      list-style: none;
+    }
+
+    figure ul,
+    figure li {
+      margin: 0;
+      padding: 0;
+    }
+
+    figure img {
+      display: block;
+      max-height: 300px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    figure > a li {
+      display: block;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      figure > a:hover li {
+        box-shadow: 0 0 0 2px white inset;
+      }
+
+      figure img {
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+      }
+
+      figure > a:hover img {
+        -webkit-filter: opacity(80%) grayscale(100%);
+        filter: opacity(80%) grayscale(100%);
+      }
+    }
+
+    figcaption {
+      display: block;
+      margin: 2em 0 0;
+      font-size: 93%;
+    }
+
+    footer {
+      bottom: 0;
+      color: white;
+      line-height: 10em;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+      z-index: 0;
+    }
+
+    footer .wrapper {
+      padding: 0;
+      position: relative;
+      z-index: 3333;
+    }
+
+    footer p { margin: 0; }
+
+    @media screen and (max-width: 780px) {
+      .wrapper { padding: 2em 1em; }
+      figure { margin: 2.75em 0 2.5em; }
+      figure ~ hr { margin: 2.5em 0; }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 200%; line-height: 1.35; margin: 1em 0 0; }
+      hr { margin: 2.75em 0; }
+      strong { line-height: 1.5; }
+      footer { font-size: 87.5%; line-height: 5; }
+      .section--intro { text-align: center; }
+      .section--intro .wrapper { padding-bottom: 0; }
+      .section--cv .wrapper { padding-top: 2em; }
+      .section--cv hr { display: none; }
+      .section--portfolio { margin-bottom: 4.5em; }
+      .section--portfolio h1 { text-align: left; }
+    }
+
+    /* Yep, it's a thing. A price to pay for the fancy-schmancy fixed header/footer, I guess. :( */
+    @media screen and (max-height: 420px) {
+      .section--intro { position: static; }
+      .section--intro .wrapper { padding-bottom: 0; }
+      .section--cv { margin-top: 2em !important; }
+      .section--cv .wrapper { padding-top: 2em; }
+      .section--portfolio { margin-bottom: 0; }
+      footer { position: static; }
+    }
+
+    /* --- */
+
+    .gallery .control-operator:target ~ .controls .control-button {
+      color: #ccc;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .gallery .control-button:first-of-type,
+    .items-2 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+    .items-2 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+    .items-3 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+    .items-3 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+    .items-3 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+    .items-4 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+    .items-4 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+    .items-4 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+    .items-4 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
+    .items-5 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+    .items-5 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+    .items-5 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+    .items-5 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
+    .items-5 .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
+      color: white;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .gallery .item:first-of-type {
+      position: static;
+      opacity: 1;
+    }
+
+    .gallery .item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      -webkit-transition: opacity .3s ease-in-out;
+      -moz-transition: opacity .3s ease-in-out;
+      transition: opacity .3s ease-in-out;
+      -webkit-transition-property: opacity, box-shadow;
+      -moz-transition-property: opacity, box-shadow;
+      transition-property: opacity, box-shadow;
+    }
+
+    .gallery .control-operator {
+      display: none;
+    }
+
+    .gallery .control-operator:target ~ .item {
+      pointer-events: none;
+      opacity: 0;
+      -webkit-animation: none;
+      -o-animation: none;
+      animation: none;
+    }
+
+    .gallery .control-operator:target ~ .controls .control-button {
+      -webkit-animation: none;
+      -o-animation: none;
+      animation: none;
+    }
+
+    @-webkit-keyframes controlAnimation-2 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      14.3%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-o-keyframes controlAnimation-2 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      14.3%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @keyframes controlAnimation-2 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      14.3%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-webkit-keyframes galleryAnimation-2 {
+      0% {
+        opacity: 0;
+      }
+
+      14.3%, 50% {
+        opacity: 1;
+      }
+
+      64.3%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @-o-keyframes galleryAnimation-2 {
+      0% {
+        opacity: 0;
+      }
+
+      14.3%, 50% {
+        opacity: 1;
+      }
+
+      64.3%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes galleryAnimation-2 {
+      0% {
+        opacity: 0;
+      }
+
+      14.3%, 50% {
+        opacity: 1;
+      }
+
+      64.3%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .items-2.autoplay .control-button {
+      -webkit-animation: controlAnimation-2 14s infinite;
+      -o-animation: controlAnimation-2 14s infinite;
+      animation: controlAnimation-2 14s infinite;
+    }
+
+    .items-2.autoplay .item {
+      -webkit-animation: galleryAnimation-2 14s infinite;
+      -o-animation: galleryAnimation-2 14s infinite;
+      animation: galleryAnimation-2 14s infinite;
+    }
+
+    .items-2 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-2 .control-button:nth-of-type(1),
+    .items-2 .item:nth-of-type(1) {
+      -webkit-animation-delay: -2s;
+      -o-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .items-2 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-2 .control-button:nth-of-type(2),
+    .items-2 .item:nth-of-type(2) {
+      -webkit-animation-delay: 5s;
+      -o-animation-delay: 5s;
+      animation-delay: 5s;
+    }
+
+    @-webkit-keyframes controlAnimation-3 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-o-keyframes controlAnimation-3 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @keyframes controlAnimation-3 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-webkit-keyframes galleryAnimation-3 {
+      0% {
+        opacity: 0;
+      }
+
+      9.5%, 33.3% {
+        opacity: 1;
+      }
+
+      42.9%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @-o-keyframes galleryAnimation-3 {
+      0% {
+        opacity: 0;
+      }
+
+      9.5%, 33.3% {
+        opacity: 1;
+      }
+
+      42.9%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes galleryAnimation-3 {
+      0% {
+        opacity: 0;
+      }
+
+      9.5%, 33.3% {
+        opacity: 1;
+      }
+
+      42.9%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .items-3.autoplay .control-button {
+      -webkit-animation: controlAnimation-3 21s infinite;
+      -o-animation: controlAnimation-3 21s infinite;
+      animation: controlAnimation-3 21s infinite;
+    }
+
+    .items-3.autoplay .item {
+      -webkit-animation: galleryAnimation-3 21s infinite;
+      -o-animation: galleryAnimation-3 21s infinite;
+      animation: galleryAnimation-3 21s infinite;
+    }
+
+    .items-3 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-3 .control-button:nth-of-type(1),
+    .items-3 .item:nth-of-type(1) {
+      -webkit-animation-delay: -2s;
+      -o-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .items-3 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-3 .control-button:nth-of-type(2),
+    .items-3 .item:nth-of-type(2) {
+      -webkit-animation-delay: 5s;
+      -o-animation-delay: 5s;
+      animation-delay: 5s;
+    }
+
+    .items-3 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-3 .control-button:nth-of-type(3),
+    .items-3 .item:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      -o-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    @-webkit-keyframes controlAnimation-4 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-o-keyframes controlAnimation-4 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @keyframes controlAnimation-4 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-webkit-keyframes galleryAnimation-4 {
+      0% {
+        opacity: 0;
+      }
+
+      7.1%, 25% {
+        opacity: 1;
+      }
+
+      32.1%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @-o-keyframes galleryAnimation-4 {
+      0% {
+        opacity: 0;
+      }
+
+      7.1%, 25% {
+        opacity: 1;
+      }
+
+      32.1%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes galleryAnimation-4 {
+      0% {
+        opacity: 0;
+      }
+
+      7.1%, 25% {
+        opacity: 1;
+      }
+
+      32.1%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .items-4.autoplay .control-button {
+      -webkit-animation: controlAnimation-4 28s infinite;
+      -o-animation: controlAnimation-4 28s infinite;
+      animation: controlAnimation-4 28s infinite;
+    }
+
+    .items-4.autoplay .item {
+      -webkit-animation: galleryAnimation-4 28s infinite;
+      -o-animation: galleryAnimation-4 28s infinite;
+      animation: galleryAnimation-4 28s infinite;
+    }
+
+    .items-4 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-4 .control-button:nth-of-type(1),
+    .items-4 .item:nth-of-type(1) {
+      -webkit-animation-delay: -2s;
+      -o-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .items-4 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-4 .control-button:nth-of-type(2),
+    .items-4 .item:nth-of-type(2) {
+      -webkit-animation-delay: 5s;
+      -o-animation-delay: 5s;
+      animation-delay: 5s;
+    }
+
+    .items-4 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-4 .control-button:nth-of-type(3),
+    .items-4 .item:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      -o-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    .items-4 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-4 .control-button:nth-of-type(4),
+    .items-4 .item:nth-of-type(4) {
+      -webkit-animation-delay: 19s;
+      -o-animation-delay: 19s;
+      animation-delay: 19s;
+    }
+
+    @-webkit-keyframes controlAnimation-5 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-o-keyframes controlAnimation-5 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @keyframes controlAnimation-5 {
+      0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @-webkit-keyframes galleryAnimation-5 {
+      0% {
+        opacity: 0;
+      }
+
+      5.7%, 20% {
+        opacity: 1;
+      }
+
+      25.7%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @-o-keyframes galleryAnimation-5 {
+      0% {
+        opacity: 0;
+      }
+
+      5.7%, 20% {
+        opacity: 1;
+      }
+
+      25.7%, 100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes galleryAnimation-5 {
+      0% {
+        opacity: 0;
+      }
+
+      5.7%, 20% {
+        opacity: 1;
+      }
+
+      25.7%, 100% {
+        opacity: 0;
+      }
+    }
+
+    .items-5.autoplay .control-button {
+      -webkit-animation: controlAnimation-5 35s infinite;
+      -o-animation: controlAnimation-5 35s infinite;
+      animation: controlAnimation-5 35s infinite;
+    }
+
+    .items-5.autoplay .item {
+      -webkit-animation: galleryAnimation-5 35s infinite;
+      -o-animation: galleryAnimation-5 35s infinite;
+      animation: galleryAnimation-5 35s infinite;
+    }
+
+    .items-5 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-5 .control-button:nth-of-type(1),
+    .items-5 .item:nth-of-type(1) {
+      -webkit-animation-delay: -2s;
+      -o-animation-delay: -2s;
+      animation-delay: -2s;
+    }
+
+    .items-5 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-5 .control-button:nth-of-type(2),
+    .items-5 .item:nth-of-type(2) {
+      -webkit-animation-delay: 5s;
+      -o-animation-delay: 5s;
+      animation-delay: 5s;
+    }
+
+    .items-5 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-5 .control-button:nth-of-type(3),
+    .items-5 .item:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      -o-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    .items-5 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-5 .control-button:nth-of-type(4),
+    .items-5 .item:nth-of-type(4) {
+      -webkit-animation-delay: 19s;
+      -o-animation-delay: 19s;
+      animation-delay: 19s;
+    }
+
+    .items-5 .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    .items-5 .control-button:nth-of-type(5),
+    .items-5 .item:nth-of-type(5) {
+      -webkit-animation-delay: 26s;
+      -o-animation-delay: 26s;
+      animation-delay: 26s;
+    }
+
+    .gallery .control-button {
+      color: #ccc;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .gallery .control-button:hover {
+      color: white;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /*
+      Theme controls how everything looks in Gallery CSS.
+    */
+
+    .gallery {
+      position: relative;
+    }
+
+    .gallery .item {
+      height: auto;
+      max-height: 300px;
+      overflow: hidden;
+      text-align: center;
+      background: #222;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="section--intro">
+    <div class="wrapper">
+      <div class="site-width">
+        <h1>Hi there!</h1>
+        <p class="has-shadow">
+          My name is <strong><abbr title="That's Steven in Hungarian">István</abbr> Huszár</strong> and I'm a <strong>Front-end Developer</strong> and <strong>Web Designer,</strong> originally from Transylvania, now living in sunny Adelaide, South Australia. It's nice to see you! On this tiny page you can find a small showcase of my previous work.
+        </p>
+        <p class="has-shadow">
+          Feel free to <a href="mailto:khay@khay.mn">drop me a line</a> if you want to get in touch. You have a nice day now!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section--portfolio">
+    <div class="wrapper">
+      <div class="site-width">
+        <h1>Some things I loved working on</h1>
+        <figure class="autoplay gallery items-4">
+          <a href="http://codehire.com/">
+            <ul>
+              <li class="item"><img src="images/ch1.jpg" alt="Codehire website screenshot 1"></li>
+              <li class="item"><img src="images/ch2.png" alt="Codehire website screenshot 2"></li>
+              <li class="item"><img src="images/ch3.png" alt="Codehire website screenshot 3"></li>
+              <li class="item"><img src="images/ch4.jpg" alt="Codehire Cup winner badges"></li>
+            </ul>
+          </a>
+          <figcaption>
+            <h2>Codehire</h2>
+            <p>This is a fantastic coder community with challenges, profiles and job listings. I was tasked with creating its design using Photoshop, followed by converting all that to frontend code.</p>
+            <p><strong>Tech used:</strong> Photoshop, Ruby on Rails, Haml, Sass, Compass and CoffeeScript.</p>
+          </figcaption>
+        </figure>
+        <hr>
+        <figure class="autoplay gallery items-5">
+          <ul>
+            <li class="item"><img src="images/dc1.png" alt="Dynamic Creative screenshot 1"></li>
+            <li class="item"><img src="images/dc2.png" alt="Dynamic Creative screenshot 2"></li>
+            <li class="item"><img src="images/dc3.png" alt="Dynamic Creative screenshot 3"></li>
+            <li class="item"><img src="images/dc4.png" alt="Dynamic Creative screenshot 4"></li>
+            <li class="item"><img src="images/dc5.png" alt="Dynamic Creative screenshot 5"></li>
+          </ul>
+          <figcaption>
+            <h2>Dynamic Creative</h2>
+            <p>While working at e-channel Search, I was responsible for the UI/UX design and frontend codebase of the company's internal search engine marketing tool, Dynamic Creative. The software allows users to create and maintain huge search engine campaigns, so I had to come up with solutions to some very interesting problems when it came to displaying and interacting with very large amounts of information.</p>
+            <p>Due to the application only seeing a public release later this year, I can only privately show tiny snippets of the interface and the frontend codebase.</p>
+            <p><strong>Tech used:</strong> Photoshop, Ruby on Rails, Haml, Sass, CoffeeScript, Jasmine, Guard and much more.</p>
+          </figcaption>
+        </figure>
+        <hr>
+        <figure>
+          <img src="images/dcpt.png" alt="Performance Tracker logo">
+          <figcaption>
+            <h2>Performance Tracker</h2>
+            <p>I've created the logo for a reporting tool that was developed and used internally at e-channel Online.</p>
+            <p><strong>Tech used:</strong> Pen, Paper, Illustrator, Photoshop.</p>
+          </figcaption>
+        </figure>
+        <hr>
+        <figure>
+          <a href="http://desertdrifter.net/">
+            <ul>
+              <li><img src="images/dd.jpg" alt="Desert Drifter website"></li>
+            </ul>
+          </a>
+          <figcaption>
+            <h2>Desert Drifter</h2>
+            <p>This was the blog of Sebastian von Conrad, a fellow developer, detailing his travels and experiences in the USA. I was responsible for the entire graphical aspect of the website and the slicing & HTML/CSS coding that came afterwards.</p>
+            <p>Tech used: Photoshop, HTML, CSS, JavaScript.</p>
+          </figcaption>
+        </figure>
+        <hr>
+        <figure>
+          <a href="images/redmango-fullsize.png">
+            <ul>
+              <li><img src="images/rm.jpg" alt="Red Mango photo retouching"></li>
+            </ul>
+          </a>
+          <figcaption>
+            <h2>Red Mango</h2>
+            <p>I have extensively collaborated with Red Mango—known as <a href="http://www.cacaogreen.com.au/">Cacao Green</a> here in Australia,—a famous frozen yogurt and smoothie chain from the USA. The work I have done for the company involved the retouching, editing and photo manipulation of images featuring various delicious products.</p>
+            <p><strong>Tools used:</strong> Photoshop (lots of it.)</p>
+          </figcaption>
+        </figure>
+        <hr>
+        <figure>
+          <a href="files/ftopia-datasheet-en.pdf">
+            <ul>
+              <li><img src="images/ft.jpg" alt="ftopia service overview brochure"></li>
+            </ul>
+          </a>
+          <figcaption>
+            <h2>ftopia service brochure</h2>
+            <p>A service overview PDF brochure created for <a href="http://ftopia.com/">ftopia</a>—a collaborative file sharing solution for business use,—detailing their services and features.</p>
+            <p>Tools used: Photoshop and InDesign.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper">
+      <p class="has-shadow">Like what you see? Sweet! Let's <a href="mailto:khay@khay.mn">get in touch</a>!</p>
+    </div>
+  </footer>
+
+  <script>
+    var sections = document.getElementsByTagName('section');
+    sections[1].style.marginTop = sections[0].offsetHeight;
+  </script>
+
+</body>
+</html>

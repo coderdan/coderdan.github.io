@@ -175,7 +175,7 @@ ul {
 }
 
 .page-trigger {
-  background: hsl(185, 95%, 40%);
+  background: hsl(185, 95%, 35%);
   position: absolute;
   top: 3em;
   right: -3.5em;
@@ -187,7 +187,7 @@ ul {
 }
 
 .page-trigger a {
-  border: 1px solid hsl(185, 95%, 40%);
+  border: 1px solid hsl(185, 95%, 35%);
   display: block;
   color: white;
   text-decoration: none;
@@ -200,9 +200,9 @@ ul {
 }
 
 .page-trigger span {
-  margin-left: 0.25em;
   color: hsl(185, 55%, 75%);
   font-family: Arial, sans-serif;
+  margin-left: 0.25em;
 }
 
 .page-trigger a:hover {
