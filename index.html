@@ -1,68 +1,36 @@
 <html>
   <head>
     <title>coderdan.co</title>
-    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
-  <body>
+  <body class="index">
 
-    <header class="header--main">
-      <h1>Dan Draper</h1>
-
-      <ul class="list--skill">
-        <li class="list--skill-item">On-Demand CTO</li>
-        <li class="list--skill-item">Ruby/Rails Expert</li>
-        <li class="list--skill-item">Agile Consultant</li>
-      </ul>
-
-      <ul class="list--contact-header">
-        <li class="list--contact-header-item">
-          <a href="mailto:dan@coderdan.co" title="dan@coderdan.co"><img src="images/i-mail.png" alt="Email"></a>
-        </li>
-        <li class="list--contact-header-item">
-          <a href="http://linkedin.com/in/ddraper" title="linkedin.com/in/ddraper"><img src="images/i-linkedin.png" alt="LinkedIn"></a>
-        </li>
-        <li class="list--contact-header-item">
-          <a href="http://twitter.com/danieldraper" title="@danieldraper"><img src="images/i-twitter.png" alt="Twitter"></a>
-        </li>
-        <li class="list--contact-header-item">
-          <a href="http://github.com/coderdan" title="github.com/coderdan"><img src="images/i-github.png" alt="GitHub"></a>
-        </li>
-      </ul>
-      <div class="page-trigger">
-        <a href="istvan.html">István's Page <span>→</span></a>
-      </div>
-    </header>
-
-    <section class="video--wrapper">
-      <div class="video--container">
-        <div class="video--clip">
-          <iframe allowfullscreen frameborder="0" mozallowfullscreen webkitallowfullscreen src="http://player.vimeo.com/video/85224249?title=0&byline=0&portrait=0"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="bio--wrapper">
+    <div class="header--base">
       <div class="site-width">
-        <img class="bio--image" src="images/dan-draper.jpg">
-        <div class="bio--text">
-          <h1>About Me</h1>
-          <p>
-            &ldquo;I've been working in the software industry for almost 15 years. In that time I've directed development teams in my startup and ran my own successful consulting firm.
-            I've helped companies large and small hire the right people, solve technical problems and refine their software development processes.
-          </p>
-          <p>
-          <em>My approach to helping software teams is to develop a focus on metrics.</em>
-          This way teams can quickly identify areas for improvement and deal with potential issues before they become problematic.
-          I implement systems and practices to ensure that management, clients and devs are all clear on what needs to be done and how it will be achieved.&rdquo;
-          </p>
-        </div>
+        <h1>
+          <a class="logo" href="/">codercollective<span>.co</span></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="dan.html" class="is-active">Home</a></li>
+            <li><a href="dan.html">Dan Draper</a></li>
+            <li><a href="istvan.html">István Huszár</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="site-intro">
+      <div class="site-width">
+        <p>Cupcake ipsum dolor. Sit amet icing pie brownie dragée jelly beans. Chocolate tiramisu sweet roll caramels. Chocolate powder chocolate bar fruitcake sesame snaps bear claw apple pie sweet liquorice. Caramels lollipop gingerbread chupa chups caramels candy sugar plum marzipan gummi bears.</p>
+        <p>Apple pie chocolate topping candy jellybeans. Some of our services:</p>
       </div>
     </section>
 
     <section class="service--wrapper">
       <div class="site-width">
-        <h1>Services</h1>
         <ul class="list--services">
           <li class="list--services-item">
             <h2>Agile Coaching</h2>
@@ -92,91 +60,17 @@
       </div>
     </section>
 
-    <section class="testimonial--wrapper">
-      <div class="site-width">
-        <h1>What do people say?</h1>
-        <div class="testimonial--slider slider">
-          <ul class="testimonial--list slides">
-            <li class="slide">
-              <blockquote class="testimonial--item">
-                <q class="testimonial--text">
-                  <p>What impressed me the most was [Dan's] technical thought leadership as well as his ability to architect and implement solutions under tight time constraints without cutting any corners.</p>
-                </q>
-                <footer>
-                  <img src="images/t-ronnie-kessler.jpg" alt="Ronnie Kessler">
-                  <cite>Ronnie Kessler</cite>
-                  <ul class="testimonial--author-info">
-                    <li>Technical Director</li>
-                    <li><a href="http://www.onebigswitch.com">One Big Switch</a></li>
-                  </ul>
-                </footer>
-              </blockquote>
-            </li>
-            <li class="slide">
-              <blockquote class="testimonial--item">
-                <q class="testimonial--text">
-                  <p>[Dan] took the initiative to improve our development processes and took ownership of the development team. In the time that Dan was at e-channel we paid back technical debt that had racked up over the last 5 years, completed our cloud migration and overhauled our development processes.</p>
-                </q>
-                <footer>
-                  <img src="images/t-frank-grasso.jpg" alt="Frank Grasso">
-                  <cite>Frank Grasso</cite>
-                  <ul class="testimonial--author-info">
-                    <li>CEO</li>
-                    <li><a href="http://www.e-channel.com.au">e-channel Search</a></li>
-                  </ul>
-                </footer>
-              </blockquote>
-            </li>
-            <li class="slide">
-              <blockquote class="testimonial--item">
-                <q class="testimonial--text">
-                  <p>Dan is a fantastic mentor, manager and programmer. He is very easy to work for and is very knowledgeable and professional. His ability to communicate on a business level and translate this to the technical challenges is inspiring and a sought after skill.</p>
-                </q>
-                <footer>
-                  <img src="images/t-kieran-andrews.jpg" alt="Kieran Andrews">
-                  <cite>Kieran Andrews</cite>
-                  <ul class="testimonial--author-info">
-                    <li>Senior Software Developer</li>
-                    <li><a href="http://www.e-channel.com.au">e-channel Search</a></li>
-                  </ul>
-                </footer>
-              </blockquote>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section class="cta--wrapper">
       <div class="site-width">
-        <h1>Engage me for <strong class="price price--dollar">960/day</strong> AUD</h1>
-        <small>Special rates for agencies or long term relationships</small>
+        <h1>Engage us today!</h1>
         <a href="mailto:dan@coderdan.co" class="cta--button">Get in touch for <strong>a free appraisal</strong></a>
+        <small>Special rates for agencies or long term relationships</small>
       </div>
     </section>
 
-    <footer class="footer--wrapper">
+    <footer>
       <div class="site-width">
-        <h1>Contact</h1>
-        <ul class="footer--item-wrapper has-icons">
-          <li class="icon-address">21/29-35 Cowper St</li>
-          <li>Marrickville</li>
-          <li>NSW Australia</li>
-        </ul>
-        <ul class="footer--item-wrapper has-icons">
-          <li class="icon-mail">
-            <a href="mailto:dan@coderdan.co">dan@coderdan.co</a>
-          </li>
-          <li class="icon-linkedin">
-            <a href="http://linkedin.com/in/ddraper"><i>/</i>ddraper</a>
-          </li>
-          <li class="icon-twitter">
-            <a href="http://twitter.com/danieldraper"><i>@</i>danieldraper</a>
-          </li>
-          <li class="icon-github">
-            <a href="http://github.com/coderdan">coderdan</a>
-          </li>
-        </ul>
+        &copy; 2014 codercollective.co
       </div>
     </footer>
 
