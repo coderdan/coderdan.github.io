@@ -694,7 +694,7 @@ ul {
 
 .service--wrapper {
   border-top: 5px solid hsl(10, 55%, 60%);
-  padding: 2em 0;
+  padding: 2em 0 1em;
 }
 
 .list--services {
@@ -1096,6 +1096,105 @@ ul {
   border-bottom: 3px solid hsl(7, 75%, 60%);
 }
 
+/* Members links */
+
+
+.member--list {
+  text-align: center;
+}
+
+.member--person {
+  display: inline-block;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  width: 250px;
+}
+
+.member--person a {
+  border: 1px dashed hsl(195, 7%, 85%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: inherit;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  -webkit-transition: background 0.06s ease-in-out;
+  -moz-transition: background 0.06s ease-in-out;
+  -ms-transition: background 0.06s ease-in-out;
+  -o-transition: background 0.06s ease-in-out;
+  transition: background 0.06s ease-in-out;
+}
+
+.member--person:first-child {
+  margin-left: 0;
+}
+
+.member--photo {
+  border: 0 solid white;
+  border-radius: 50%;
+  display: block;
+  height: 125px;
+  font-size: 75%;
+  margin: 0 auto;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 125px;
+}
+
+.member--person a:hover,
+.member--person a:active {
+  background-color: hsl(9, 75%, 60%);
+  border-color: transparent;
+}
+
+.member--person a:hover .member--photo {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 7px solid white;
+}
+
+.member--person a:hover .member--name,
+.member--person a:active .member--name {
+  color: white;
+}
+
+.member--person a:hover .member--title,
+.member--person a:active .member--title {
+  color: hsl(10, 90%, 82%);
+}
+
+.member--name,
+.member--title {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.member--name {
+  color: hsl(200, 10%, 30%);
+  display: block;
+  font-size: 135%;
+  margin-top: 0.5em;
+}
+
+.member--title {
+  color: hsl(200, 7%, 65%);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: 65%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Look ma', I'm responsive! */
+
 @media screen and (max-width: 1000px) {
   .header--main {
     background-size: auto;
@@ -1213,12 +1312,25 @@ ul {
   .header--main h1 {
     font-size: 300%;
   }
+
+  .member--person {
+    width: 200px;
+  }
+
+  .member--name {
+    font-size: 110%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
   .index {
     font-size: 18px;
     padding: 0 1.5em;
+  }
+
+  .site-intro p {
+    margin-bottom: 1em;
   }
 
   .cta--wrapper {
@@ -1300,6 +1412,20 @@ ul {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
+
+  .member--person {
+    border-color: transparent;
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+
+  .member--person a {
+    border-color: transparent;
+  }
+
+  .member--title {
+    font-size: 60%;
+  }
 }
 
 /* Plugins */
@@ -1336,9 +1462,9 @@ ul {
   color: hsl(210, 5%, 90%);
   font-size: 16px;
   padding: 4px 15px;
-  border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 #tiptip_arrow, #tiptip_arrow_inner {
