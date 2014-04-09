@@ -86,7 +86,7 @@
       line-height: 1.15;
       min-height: 0;
       height: auto;
-      overflow: hidden;
+      overflow: visible;
       text-transform: uppercase;
       margin: 0;
       padding: 20px 0;
@@ -137,6 +137,94 @@
       letter-spacing: 1px;
     }
 
+    .menu--trigger {
+      position: relative;
+    }
+
+    .menu--trigger > a:before {
+      content: '▼';
+      color: #bbb;
+      display: block;
+      font-size: 95%;
+      position: absolute;
+      min-height: 1.5em;
+      right: -2em;
+      width: 2em;
+      text-align: center;
+      top: 0;
+      -webkit-transform: scale(0.65);
+      -moz-transform: scale(0.65);
+      -ms-transform: scale(0.65);
+      -o-transform: scale(0.65);
+      transform: scale(0.65);
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      -ms-transition: all 0.1s;
+      -o-transition: all 0.1s;
+      transition: all 0.1s;
+    }
+
+    .menu--trigger:hover > a,
+    .menu--trigger:hover > a:hover,
+    .menu--trigger:hover > a:before,
+    .menu--trigger:active > a,
+    .menu--trigger:active > a:hover,
+    .menu--trigger:active > a:before {
+      color: hsl(7, 75%, 60%) !important;
+    }
+
+    .menu--trigger:hover > a:before,
+    .menu--trigger:active > a:before {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+
+    ul.menu--list {
+      background: hsla(55, 99%, 100%, 1);
+      border-radius: 3px;
+      max-height: 0;
+      overflow: hidden;
+      position: absolute;
+      right: -1.5em;
+      text-align: right;
+      top: 100%;
+      z-index: 9999;
+      width: auto;
+    }
+
+    .menu--list li {
+      display: block;
+      font-size: 90%;
+      padding: 0 1.5em;
+      margin: 1.25em 0;
+      white-space: nowrap;
+    }
+
+    .menu--list li:last-child {
+      margin-bottom: 1.25em;
+    }
+
+    .menu--trigger:hover .menu--list,
+    .menu--trigger:focus .menu--list {
+      max-height: 999px;
+    }
+
+    .menu--trigger:hover .menu--list a:hover {
+      color: hsl(7, 75%, 60%);
+    }
+
+    .menu--trigger:hover .menu--list a:hover:after {
+      background: hsl(7, 75%, 60%);
+    }
+
     .header--base li a {
       display: inline-block;
       color: hsl(180, 5%, 55%);
@@ -146,7 +234,7 @@
       position: relative;
     }
 
-    .header--base li a::after {
+    .header--base li a:after {
       background: hsl(200, 7%, 30%);
       content: '';
       left: 0;
@@ -157,14 +245,14 @@
       -webkit-transition: height 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
       -moz-transition: height 0.2s ease-in-out, opacity 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
       transition: height 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-      -webkit-transform: translateY(-5px);
-      -moz-transform: translateY(-5px);
-      transform: translateY(-5px);
+      -webkit-transform: translateY(-7px);
+      -moz-transform: translateY(-7px);
+      transform: translateY(-7px);
       width: 100%;
     }
 
     .header--base li a.is-active,
-    .header--base li a:hover {
+    .header--base li:hover a {
       color: hsl(200, 7%, 30%);
     }
 
@@ -173,9 +261,9 @@
     .header--base li a:focus:after {
       height: 4px;
       opacity: 1;
-      -webkit-transform: translateY(2px);
-      -moz-transform: translateY(2px);
-      transform: translateY(2px);
+      -webkit-transform: translateY(1px);
+      -moz-transform: translateY(1px);
+      transform: translateY(1px);
     }
 
     .header--base h1 {
@@ -189,8 +277,8 @@
     }
 
     .header--base .logo {
+      color: inherit;
       text-decoration: none;
-      color: hsl(7, 75%, 60%);
       float: left;
       letter-spacing: 2px;
       -webkit-transition: color 0.1s ease-in-out;
@@ -201,7 +289,7 @@
     }
 
     .header--base .logo:hover {
-      color: inherit;
+      color: hsl(7, 75%, 60%);
     }
 
     .section--intro {
@@ -1277,8 +1365,18 @@
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="dan.html">Dan Draper</a></li>
-          <li><a href="istvan.html" class="is-active">István Huszár</a></li>
+          <li><a href="agile-fundamentals.html">Courses</a></li>
+          <li class="menu--trigger">
+            <a href="#" class="is-active">People</a>
+            <ul class="menu--list">
+              <li>
+                <a href="dan.html">Dan Draper</a>
+              </li>
+              <li>
+                <a href="istvan.html">István Huszár</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
