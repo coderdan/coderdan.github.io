@@ -575,7 +575,27 @@ body:before {
   position: relative;
 }
 
-.upcoming-courses--wrapper small:before {
+.upcoming-courses--wrapper span.asterisk, .upcoming-courses--wrapper span.form-field {
+  display: inline-block;
+  position: relative;
+  margin-top: 8px;
+}
+
+.upcoming-courses--wrapper input {
+  width: 100%;
+}
+
+.upcoming-courses--wrapper span.asterisk:before {
+  color: hsl(7, 80%, 60%);
+  content: '*';
+  font-size: 145%;
+  font-weight: 900;
+  left: -0.8em;
+  position: absolute;
+  top: -0.15em;
+}
+
+.upcoming-courses--wrapper small.asterisk:before {
   color: hsl(7, 80%, 60%);
   content: '*';
   font-size: 145%;
@@ -695,6 +715,10 @@ a:active {
   box-shadow: none;
 }
 
+img.inline-image {
+  width:100%;
+}
+
 /* Responsive styles */
 
 @media screen and (max-width: 960px) {
@@ -767,6 +791,7 @@ a:active {
   .main--description {
     float: none;
     width: 100%;
+    border: solid red 1px;
   }
 
   .upcoming-courses--container {
